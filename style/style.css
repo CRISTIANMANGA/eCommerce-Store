@@ -21,9 +21,12 @@
     box-sizing: border-box;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 807e62a (fix :construction: armo la base)
+=======
+>>>>>>> 7f894a5 (se creo parte del profile)
 .gridcontainer{
     grid-template-columns: 1;
     grid-template-rows: 10vh 10vh 10vh 70vh;
@@ -45,18 +48,24 @@
     height: 100vh;
     width: 100vw;
 }
+.searchBar{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
 .gridcontainer > div{
     border: 1px solid black;
 }
-
-
-.header1{
-    display: flex;
+@@ -41,21 +46,28 @@
 }
 
 
 .hello{
+<<<<<<< HEAD
 >>>>>>> 807e62a (fix :construction: armo la base)
+=======
+.cap1{
+>>>>>>> 7f894a5 (se creo parte del profile)
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,7 +78,11 @@
     border: 1px solid blue;
 }
 .hello2{
+<<<<<<< HEAD
 >>>>>>> 807e62a (fix :construction: armo la base)
+=======
+.cap2{
+>>>>>>> 7f894a5 (se creo parte del profile)
     display: flex;
     align-items: center;
     justify-content: right;
@@ -306,22 +319,24 @@
 =======
     border: 1px solid blue;
 }
+.cap3{
+    height: 100%;
+    border: 1px solid aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 #hello{
-    margin-left: 4vw;
-    font-size: 4vw;
-    font-family: "ESregular";
-}
-#name{
-    margin-left: 4vw;
-    font-size: 4.4vw;
-    font-family: "ESbold";
+@@ -70,13 +82,18 @@
 }
 
 .profilecuadro{
     width: 10vw;
     height: 10vw;
+    width: 12vw;
+    height: 12vw;
     margin-right: 4vw;
     border-radius: 50%;
     overflow: hidden;
@@ -329,5 +344,13 @@
 
 #profile{
     width: 100%;
+<<<<<<< HEAD
 >>>>>>> 807e62a (fix :construction: armo la base)
+=======
+}
+
+#search{
+    height: 50%;
+    background-image: url('ruta_de_la_imagen.jpg');
+>>>>>>> 7f894a5 (se creo parte del profile)
 }
