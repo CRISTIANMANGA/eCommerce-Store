@@ -1,44 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../style/checkout.css">
+    <link rel="stylesheet" href="../style/detail.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
+    <title>Details</title>
 </head>
 <body>
-
-    <div class="gridContainer">
-        <div class="division">
-
-            <div class="menu">
-                <img onclick="window.location.href = 'detail.html'" class="boton" src="../storage/media/backNoS.svg">
-                <p id="checkout">Checkout</p>
-                <img class="boton" src="../storage/media/menu.svg">
-            </div>
-        </div>
-        <div class="division">
-            <div class="flexgalery">
-                <div class="product">
-                    <img class="img" src="../storage/media/images/p1.1.svg">
-                </div>
-
-                <img class="line" src="../storage/media/line2.svg">
-                <div class="product">
-                    <img class="img" src="../storage/media/images/p2.2.svg">
-                </div>
-
-                <img class="line" src="../storage/media/line2.svg">
-                <div class="product">
-                    <img class="img" src="../storage/media/images/p3.1.svg">
+    <div class="flexC">
+        <div class="gridcontainer">
+            <div class="container1">
+                <div class="imgcontainer">
+                    <img id="like" src="../storage/media/likeinvert.svg">
+                    <img id="img" src="../storage/media/images/p2.1.svg">
+                    <img onclick="window.location.href = '../index.html'" id="back" src="../storage/media/back.svg">
                 </div>
             </div>
-        </div>
-        <div class="division">
-
-  3 changes: 1 addition & 2 deletions3  
-views/detail.html
-@@ -62,12 +62,11 @@
+            <div class="container">
+                <div class="infocontainer">
+                    <div class="gridTitle">
+                        <div class="gridTitleItem">
+                            <p id="productoTitle">Modern light<br>clothes</p>
+                        </div>
+                        <div class="gridTitleItem2">
+                            <div class="countContainer">
+                                <img class="countItem" src="../storage/media/countMinus.svg">
+                                <p id="countNumber">1</p>
+                                <img class="countItem" src="../storage/media/countMore.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <img id="stars" src="../storage/media/stars.svg">
+                        <p id="rerviewsText">5.0 <span id="blue">(7.932 reviews)</span></p>
+                    </div>
+                    <p id="descript">Its simple and elegant shape makes it perfect for<br>those of you who like you who want minimalist<br>clothes <span id="readMore">Read More. . .</span></p>
+                
+                    <img id="line" src="../storage/media/line.svg">
+                    <div class="optionscontainer">
+                        <div class="tallas">
+                            <p id="chooseSize">Choose Size</p>
+                            <div class="sizes">
+                                <img class="sizesOptions" src="../storage/media/sizeS.svg">
+                                <img class="sizesOptions" src="../storage/media/sizeM.svg">
+                                <img class="sizesOptions" src="../storage/media/sizeL.svg">
+                                <img class="sizesOptions" src="../storage/media/sizeXL.svg">
+                            </div>
+                        </div>
+                        <div class="colors">
+                            <p id="chooseSize">Colors</p>
+                            <div class="sizes">
+                                <img class="colorsOptions" src="../storage/media/color1.svg">
+                                <img class="colorsOptions" src="../storage/media/color2.svg">
+                                <img class="colorsOptions" src="../storage/media/color3.svg">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
