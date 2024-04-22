@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/checkout.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +8,45 @@
 </head>
 <body>
 
-
     <div class="gridContainer">
         <div class="division">
 
+            <div class="menu">
+                <img onclick="window.location.href = 'detail.html'" class="boton" src="../storage/media/backNoS.svg">
+                <p id="checkout">Checkout</p>
+                <img class="boton" src="../storage/media/menu.svg">
+            </div>
+        </div>
+        <div class="division">
+            <div class="flexgalery">
+                <div class="product">
+                    <img class="img" src="../storage/media/images/p1.1.svg">
+                </div>
+
+                <img class="line" src="../storage/media/line2.svg">
+                <div class="product">
+                    <img class="img" src="../storage/media/images/p2.2.svg">
+                </div>
+
+                <img class="line" src="../storage/media/line2.svg">
+                <div class="product">
+                    <img class="img" src="../storage/media/images/p3.1.svg">
+                </div>
+            </div>
         </div>
         <div class="division">
 
+  3 changes: 1 addition & 2 deletions3  
+views/detail.html
+@@ -62,12 +62,11 @@
+                </div>
+            </div>
         </div>
-        <div class="division">
 
+    </div>
+        <div onclick="window.location.href = 'checkout.html'" class="navigationBar">
+            <img src="../storage/media/shopping-cart.svg">
+            <p id="cartText">Add to Cart | $100.99 <span id="tachado">$190.99</span></p>
         </div>
     </div>
 
