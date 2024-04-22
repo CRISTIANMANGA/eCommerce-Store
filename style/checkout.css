@@ -1,3 +1,4 @@
+
 @import url(variables.css);
 @font-face {
     font-family: "ESsemiBold";
@@ -24,26 +25,17 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 .gridContainer{
     display: grid;
-    border: 1px solid black;
-    grid-template-rows: 10vh 50vh 40vh;
     grid-template-rows: 10vh 50vh 90vh;
 }
-
 .division{
     display: flex;
     align-items: center;
-    border: 1px solid red;
-}
-.division2{
-    border: 1px solid red;
 }
 .menu{
     margin: 6vw;
     width: 100%;
-    border: 1px solid blue;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -72,7 +64,6 @@
     padding-bottom: 6vw;
     width: 100%;
     height: 100%;
-    border: 1px solid green;
     display: flex;
     flex-direction: column;
 }
@@ -85,13 +76,15 @@
 }
 
 .line{
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin: 3vw;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 #lineDetail{
     width: calc(100% - (12vw));
     height: 10px;
 }
-
 #productTitle{
     color: #1B2028;
     font-size: 3.8vw;
@@ -159,7 +152,6 @@
     font-size: 4vw;
     font-family: "ESsemiBold", sans-serif;
 }
-
 .payMetod{
     position: relative;
     border-radius: 3vw;
@@ -171,7 +163,6 @@
     margin-left: 6vw;
     height: 9vh;
 }
-
 #visa{
     transition: 0.2s;
     border-radius: 1vh;
@@ -194,7 +185,6 @@
     right: 0;
     margin-right: 4vw;
 }
-
 .payDetail{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -202,7 +192,6 @@
     margin-top: 3vh;
     width: calc(100% - (12vw));
 }
-
 .payLeft{
     font-size: 2vh;
     font-family: "ESregular", sans-serif;
@@ -217,7 +206,6 @@
     text-align: right;
     display: inline-block;
 }
-
 #total{
     margin-bottom: 1vh;
 }
@@ -233,7 +221,6 @@
     margin-top: 1vh;
     position: absolute;
 }
-
 .navigationBar{
     display: flex;
     flex-direction: row;
@@ -250,7 +237,6 @@
     background-color: #292526;
     border-radius: 12vw;
 }
-
 #barButton{
     font-family: "ESbold", sans-serif;
     font-size: 4vw;
