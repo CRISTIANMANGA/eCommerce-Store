@@ -1,7 +1,14 @@
 @import url(variables.css);
+<<<<<<< HEAD
 @font-face {
     font-family: "ESsemiBold";
     src: url(../storage/fonts/encodeSans/EncodeSans-SemiBold.ttf);
+=======
+
+@font-face {
+    font-family: "ESsemiBold";
+    src: url(../storage/fonts/encodeSans/EncodeSans_SemiCondensed-SemiBold.ttf);
+>>>>>>> 2e018ec (estructura para checkout)
 }
 @font-face {
     font-family: "ESregular";
@@ -19,6 +26,10 @@
     font-family: "ESmixed";
     src: url(../storage/fonts/encodeSans/EncodeSans_SemiCondensed-Medium.ttf);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2e018ec (estructura para checkout)
 *{
     padding: 0;
     margin: 0;
@@ -28,6 +39,7 @@
 .gridContainer{
     display: grid;
     border: 1px solid black;
+<<<<<<< HEAD
     grid-template-rows: 10vh 50vh 40vh;
     grid-template-rows: 10vh 50vh 90vh;
 }
@@ -260,4 +272,11 @@
     font-family: "ESbold", sans-serif;
     font-size: 4vw;
     color: #ffffff;
+=======
+    grid-template-rows: 10vh 40vh 50vh;
+}
+
+.division{
+    border: 1px solid red;
+>>>>>>> 2e018ec (estructura para checkout)
 }
