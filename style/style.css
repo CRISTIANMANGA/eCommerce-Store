@@ -144,13 +144,10 @@
     font-family: "ESmedium", sans-serif;
     text-wrap: nowrap;
 }
-
-
 .productos{
     display: flex;
     justify-content: center;
 }
-
 .productosContainer{
     gap: 0;
     display: flex;
@@ -160,7 +157,9 @@
     max-height: 100%;
     overflow: hidden;
     overflow-y: auto;
-@@ -183,13 +188,13 @@
+}
+.productContBoton{
+    position: relative;
     margin-top: 4vw;
 }
 .productCont{
@@ -168,14 +167,12 @@
     width: 90%;
     position: relative;
     margin-top: 4vw;
+    margin-bottom: 2vh;
 }
 
 .column1{
-    padding: 3vw;
-    padding-top: 0;
     flex: 50%;
 }
-
 .productoImg{
     border-radius: 4vw;
     width: 100%;
@@ -206,8 +203,10 @@
     display: flex;
     float: right;
 }
+
 .rating{
     margin-left: 2vw;
+    margin-left: 10px;
     margin-right: 4vw;
     font-size: 3.6vw;
     font-family: "ESregular", sans-serif;
@@ -233,7 +232,9 @@
     background-color: #292526;
     border-radius: 12vw;
     box-shadow: 0 -6vw 20vw -0vw rgb(255, 255, 255);
+    box-shadow: 0 -6vw 20vw 4vw rgb(255, 255, 255);
 }
+
 .navigationitem{
     display: flex;
     justify-content: center;
@@ -243,12 +244,42 @@
     width: 9vw;
     height: 4.6vh;
 }
+
 .NitemF{
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 1.6vw;
+    width: 46px;
+    height: 46px;
     border-radius: 50%;
     background-color: #FFFFFF05;
 }
+
 .NitemF:hover{
     background-color: #FFFFFF40;
+}
+
+@media (min-width: 600px) {
+    .column1{
+        flex: 25%;
+    }
+    #likeEmpty{
+        width: 4vw;
+    }
+    .productTitle{
+        font-size: 2.2vw;
+    }
+    .productoDescrip{
+        font-size: 1.6vw;
+    }
+    .productoPrice{
+        font-size: 2vw;
+    }
+    .ratingImg{
+        width: 2.2vw;
+    }
+    .rating{
+        font-size: 2vw;
+    }
 }
