@@ -126,7 +126,7 @@
 =======
 >>>>>>> 3d09f7a (actualizaciòn de home y detail)
 #img{
-    height: 60vh;
+    width: 100%;
     border-radius: 2vh;
 }
 <<<<<<< HEAD
@@ -166,17 +166,23 @@
     height: 100%;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> f0cdcd5 (cambio en detail)
+=======
+>>>>>>> 2d7b94d (se ajustò el diseño)
 .gridTitle{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> f0cdcd5 (cambio en detail)
+=======
+>>>>>>> 2d7b94d (se ajustò el diseño)
 .gridTitleItem{
     border: none;
 }
@@ -185,9 +191,12 @@
     align-items: center;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> f0cdcd5 (cambio en detail)
+=======
+>>>>>>> 2d7b94d (se ajustò el diseño)
 .countContainer{
     width: 100%;
     display: flex;
@@ -197,9 +206,12 @@
     gap: 2vw;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> f0cdcd5 (cambio en detail)
+=======
+>>>>>>> 2d7b94d (se ajustò el diseño)
 .countItem{
     width: 10vw;
 }
@@ -207,14 +219,20 @@
     filter: invert(100%);
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> f0cdcd5 (cambio en detail)
+=======
+>>>>>>> 2d7b94d (se ajustò el diseño)
 #countNumber{
     font-family: "ESbold", sans-serif;
     font-size: 6vw;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2d7b94d (se ajustò el diseño)
 #productoTitle{
     font-size: 6.4vw;
     font-family: "ESsemiBold", sans-serif;
@@ -310,6 +328,7 @@
     font-size: 3vw;
     text-decoration: line-through;
 }
+<<<<<<< HEAD
 @media (min-width: 600px) {
     #productoTitle{
         font-size: 4vw;
@@ -449,6 +468,8 @@
 =======
 }
 
+=======
+>>>>>>> 2d7b94d (se ajustò el diseño)
 @media (min-width: 600px) {
     #productoTitle{
         font-size: 4vw;
@@ -456,5 +477,23 @@
     #stars{
         width: 16vw;
     }
+<<<<<<< HEAD
 >>>>>>> f0cdcd5 (cambio en detail)
+=======
+    #descript{
+        font-size: 1.9vw;
+    }
+    #rerviewsText{
+        font-size: 2vw;
+    }
+    .flexC{
+        height: 80vh;
+    }
+    #cartText{
+        font-size: 2vw;
+    }
+    #tachado{
+        font-size: 1.2vw;
+    }
+>>>>>>> 2d7b94d (se ajustò el diseño)
 }
