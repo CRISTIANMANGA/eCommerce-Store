@@ -1,4 +1,8 @@
 @import url(variables.css);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5aa7f81 (se edita el detail)
 @font-face {
     font-family: "ESsemiBold";
     src: url(../storage/fonts/encodeSans/EncodeSans_SemiCondensed-SemiBold.ttf);
@@ -15,43 +19,79 @@
     font-family: "ESmedium";
     src: url(../storage/fonts/encodeSans/EncodeSans-Medium.ttf);
 }
+<<<<<<< HEAD
 @font-face {
     font-family: "ESmixed";
     src: url(../storage/fonts/encodeSans/EncodeSans_SemiCondensed-Medium.ttf);
 }
+=======
+
+>>>>>>> 5aa7f81 (se edita el detail)
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+<<<<<<< HEAD
 .flexC{
     display: flex;
     height: 92vh;
     overflow-y: auto;
 }
+=======
+
+>>>>>>> 5aa7f81 (se edita el detail)
 .gridcontainer{
     width: 100vw;
     height: 100vh;
     display: grid;
+<<<<<<< HEAD
     grid-template-rows: 60vh 40vh;
 }
 .container{
     display: flex;
     justify-content: center;
 }
+=======
+    grid-template-rows: 60vh 20vh 20vh;
+    border: 1px solid black;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    border: 1px solid pink;
+}
+
+>>>>>>> 5aa7f81 (se edita el detail)
 .container1{
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
 }
+=======
+    border: 1px solid pink;
+}
+
+>>>>>>> 5aa7f81 (se edita el detail)
 .imgcontainer{
     position: relative;
     display: flex;
 }
+<<<<<<< HEAD
 #img{
     width: 100%;
     border-radius: 2vh;
 }
+=======
+
+#img{
+    border-radius: 2vh;
+    height: 100%;
+}
+
+>>>>>>> 5aa7f81 (se edita el detail)
 #like{
     right: 0;
     margin-top: 1vh;
@@ -59,13 +99,17 @@
     position: absolute;
 }
 #back{
+<<<<<<< HEAD
     transition: 0.2s;
+=======
+>>>>>>> 5aa7f81 (se edita el detail)
     position: absolute;
 }
 #back:hover{
     transition: 0.2s;
     filter: invert(100%);
 }
+<<<<<<< HEAD
 .infocontainer{
     width: 86%;
     height: 100%;
@@ -216,4 +260,11 @@
     #tachado{
         font-size: 1.2vw;
     }
+=======
+
+.infocontainer{
+    width: 84%;
+    height: 100%;
+    border: 1px solid green;
+>>>>>>> 5aa7f81 (se edita el detail)
 }
