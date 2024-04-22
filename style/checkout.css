@@ -1,8 +1,6 @@
 @import url(variables.css);
-
 @font-face {
     font-family: "ESsemiBold";
-    src: url(../storage/fonts/encodeSans/EncodeSans_SemiCondensed-SemiBold.ttf);
     src: url(../storage/fonts/encodeSans/EncodeSans-SemiBold.ttf);
 }
 @font-face {
@@ -58,7 +56,6 @@
     transition: 0.2s;
     filter: invert(100%);
 }
-
 #checkout{
     color: #1B2028;
     font-size: 4vh;
@@ -76,24 +73,17 @@
     display: flex;
     flex-direction: column;
 }
-
 .product{
-    display: flex;
-    border: 1px solid blue;
     display: grid;
     grid-template-columns: 20% 50% 30%;
 }
-
 .img{
-    height: 14vh;
     width: 100%;
 }
-
 .line{
     margin-top: 2vh;
     margin-bottom: 2vh;
 }
-
 #productTitle{
     color: #1B2028;
     font-size: 3.8vw;
@@ -111,7 +101,6 @@
     font-size: 3.8vw;
     font-family: "ESsemiBold", sans-serif;
 }
-
 .image{
     display: flex;
     align-items: center;
@@ -126,7 +115,6 @@
     justify-content: right;
     align-items: end;
 }
-
 .fondo{
     padding: 2vw;
     padding-top: 3vw;
@@ -149,7 +137,6 @@
     font-family: "ESsemiBold", sans-serif;
     color: #ffffff;
 }
-
 #points{
     width: 4.4vw;
     position: absolute;
@@ -158,10 +145,25 @@
     top: 0;
     right: 0;
 }
-
 #information{
     margin-top: 6vw;
     margin-left: 6vw;
     font-size: 4vw;
     font-family: "ESsemiBold", sans-serif;
+}
+
+.payMetod{
+    border-radius: 3vw;
+    display: flex;
+    align-items: center;
+    background-color: #F6F6F6;
+    width: calc(100% - (12vw));
+    margin-top: 4vw;
+    margin-left: 6vw;
+    height: 9vh;
+}
+
+#visa{
+    width: 8vh;
+    margin-left: 5vw;
 }
