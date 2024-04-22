@@ -70,6 +70,41 @@
     width: 86%;
     height: 100%;
 }
+
+.gridTitle{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gridTitleItem{
+    border: none;
+}
+.gridTitleItem2{
+    display: flex;
+    align-items: center;
+}
+
+.countContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 2vw;
+}
+
+.countItem{
+    width: 10vw;
+}
+.countItem:hover{
+    filter: invert(100%);
+}
+
+#countNumber{
+    font-family: "ESbold", sans-serif;
+    font-size: 6vw;
+}
+
 #productoTitle{
     font-size: 6.4vw;
     font-family: "ESsemiBold", sans-serif;
@@ -81,12 +116,10 @@
     font-family: "ESmixed", sans-serif;
     color: #878787;
 }
-
 #readMore{
     font-family: "ESsemiBold", sans-serif;
     color: #1B2028;
 }
-
 #stars{
     width: 26vw;
 }
@@ -113,15 +146,12 @@
     margin-top: 1.4vh;
     width: 100%;
     display: grid;
-    gap: 20%;
-    grid-template-columns: 40% 40%;
     gap: 34%;
     grid-template-columns: 40% 26%;
 }
 .optionscontainer div{
     border: none;
 }
-
 .sizes{
     display: flex;
     flex-direction: row;
@@ -159,7 +189,6 @@
     transition: 02.s;
     background-color: #3a6033;
 }
-
 #cartText{
     margin-left: 2vw;
     font-size: 4.6vw;
@@ -170,4 +199,13 @@
     font-family: "ESregular", sans-serif;
     font-size: 3vw;
     text-decoration: line-through;
+}
+
+@media (min-width: 600px) {
+    #productoTitle{
+        font-size: 4vw;
+    }
+    #stars{
+        width: 16vw;
+    }
 }
