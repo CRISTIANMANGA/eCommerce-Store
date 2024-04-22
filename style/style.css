@@ -1,3 +1,4 @@
+
 @import url(variables.css);
 @font-face {
     font-family: "ESsemiBold";
@@ -153,6 +154,7 @@
     display: flex;
     flex-wrap: wrap;
     height: 63vh;
+    height: 60vh;
     width: calc(100% - (6vw));
     max-height: 100%;
     overflow: hidden;
@@ -166,10 +168,8 @@
     margin: 0 auto;
     width: 90%;
     position: relative;
-    margin-top: 4vw;
     margin-bottom: 2vh;
 }
-
 .column1{
     flex: 50%;
 }
@@ -203,9 +203,7 @@
     display: flex;
     float: right;
 }
-
 .rating{
-    margin-left: 2vw;
     margin-left: 10px;
     margin-right: 4vw;
     font-size: 3.6vw;
@@ -231,10 +229,8 @@
     bottom: 0;
     background-color: #292526;
     border-radius: 12vw;
-    box-shadow: 0 -6vw 20vw -0vw rgb(255, 255, 255);
     box-shadow: 0 -6vw 20vw 4vw rgb(255, 255, 255);
 }
-
 .navigationitem{
     display: flex;
     justify-content: center;
@@ -244,7 +240,6 @@
     width: 9vw;
     height: 4.6vh;
 }
-
 .NitemF{
     display: flex;
     justify-content: center;
@@ -255,11 +250,9 @@
     border-radius: 50%;
     background-color: #FFFFFF05;
 }
-
 .NitemF:hover{
     background-color: #FFFFFF40;
 }
-
 @media (min-width: 600px) {
     .column1{
         flex: 25%;
