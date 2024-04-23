@@ -21,4 +21,3 @@ document.getElementById('pay-button').addEventListener('click', function() {
             break;
     }
 });
-

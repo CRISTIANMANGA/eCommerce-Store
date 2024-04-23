@@ -276,3 +276,31 @@
         font-size: 2vw;
     }
 }
+
+
+.elemento {
+    transition: background-color 0.3s ease;
+}
+
+
+.elemento:hover {
+    background-color: #F1F1F1;
+}
+
+/* Efecto de desvanecimiento en imágenes al cargar la página */
+.productoImg {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.productoImg.loaded {
+    opacity: 1;
+}
+
+.navigationBar {
+    transition: transform 0.3s ease;
+}
+
+.navigationBar.hidden {
+    transform: translateY(100%);
+}
