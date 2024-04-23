@@ -293,6 +293,7 @@
     font-family: "ESbold", sans-serif;
     font-size: 4vw;
     color: #ffffff;
+<<<<<<< HEAD
 =======
     grid-template-rows: 10vh 40vh 50vh;
 =======
@@ -532,3 +533,80 @@
     color: #ffffff;
 >>>>>>> 86ffd05 (finaliza checkout)
 }
+=======
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.payment-options {
+    list-style-type: none;
+    padding: 0;
+}
+
+.payment-options li {
+    margin-bottom: 20px;
+}
+
+.payment-options input[type="radio"] {
+    display: none;
+}
+
+.payment-options label {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.payment-options label:hover {
+    background-color: #f0f0f0;
+}
+
+.payment-options input[type="radio"]:checked + label {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#payment-method {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+>>>>>>> 9d5ff02 (SE actualizo el diseño)
