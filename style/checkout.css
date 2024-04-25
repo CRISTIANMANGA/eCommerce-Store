@@ -87,6 +87,11 @@
 .line{
     margin-top: 2vh;
     margin-bottom: 2vh;
+    margin: 3vw;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 #lineDetail{
     width: calc(100% - (12vw));
     height: 10px;
