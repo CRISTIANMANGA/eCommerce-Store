@@ -15,6 +15,53 @@
     font-family: "ESmedium";
     src: url(../storage/fonts/encodeSans/EncodeSans-Medium.ttf);
 }
+@media (max-width: 768px) {
+    .gridcontainer {
+        grid-template-rows: auto auto auto auto; 
+    }
+
+    .header1 {
+        flex-direction: column; 
+    }
+
+    .cap1,
+    .cap2 {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    #hello,
+    #name {
+        margin-left: 0; 
+    }
+
+    .searchBar {
+        grid-template-columns: 100%;
+        margin-left: 0; 
+        margin-right: 0; 
+    }
+
+    .cap3,
+    .cap4 {
+        width: 100%; 
+        text-align: center;
+    }
+
+    .categoriascont {
+        justify-content: center; 
+    }
+
+    .productosContainer {
+        width: 100%; 
+    }
+
+    .navigationBar {
+        grid-template-columns: repeat(4, 1fr); 
+        bottom: 0; 
+        border-radius: 0; 
+    }
+}
+
 *{
     padding: 0;
     margin: 0;
