@@ -1,11 +1,4 @@
 @import url(variables.css);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 5aa7f81 (se edita el detail)
-=======
->>>>>>> 8aeb73c (avanzando en detail)
 @font-face {
     font-family: "ESsemiBold";
     src: url(../storage/fonts/encodeSans/EncodeSans_SemiCondensed-SemiBold.ttf);
@@ -22,122 +15,43 @@
     font-family: "ESmedium";
     src: url(../storage/fonts/encodeSans/EncodeSans-Medium.ttf);
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 8aeb73c (avanzando en detail)
 @font-face {
     font-family: "ESmixed";
     src: url(../storage/fonts/encodeSans/EncodeSans_SemiCondensed-Medium.ttf);
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 8aeb73c (avanzando en detail)
-
->>>>>>> 5aa7f81 (se edita el detail)
-=======
->>>>>>> 3d09f7a (actualizaciòn de home y detail)
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 .flexC{
     display: flex;
     height: 92vh;
     overflow-y: auto;
 }
-=======
-
-<<<<<<< HEAD
->>>>>>> 5aa7f81 (se edita el detail)
-=======
-=======
->>>>>>> 3d09f7a (actualizaciòn de home y detail)
-.flexC{
-    display: flex;
-    height: 92vh;
-    overflow-y: auto;
-}
-<<<<<<< HEAD
-
->>>>>>> 8aeb73c (avanzando en detail)
-=======
->>>>>>> 3d09f7a (actualizaciòn de home y detail)
 .gridcontainer{
     width: 100vw;
     height: 100vh;
     display: grid;
-<<<<<<< HEAD
-<<<<<<< HEAD
     grid-template-rows: 60vh 40vh;
 }
 .container{
     display: flex;
     justify-content: center;
 }
-=======
-    grid-template-rows: 60vh 20vh 20vh;
-    border: 1px solid black;
-=======
->>>>>>> 3d09f7a (actualizaciòn de home y detail)
-    grid-template-rows: 60vh 40vh;
-}
-.container{
-    display: flex;
-    justify-content: center;
-}
-<<<<<<< HEAD
-
->>>>>>> 5aa7f81 (se edita el detail)
-=======
->>>>>>> 3d09f7a (actualizaciòn de home y detail)
 .container1{
     display: flex;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
-=======
-    border: 1px solid pink;
-}
-
->>>>>>> 5aa7f81 (se edita el detail)
-=======
-}
->>>>>>> 3d09f7a (actualizaciòn de home y detail)
 .imgcontainer{
     position: relative;
     display: flex;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 #img{
-    width: 100%;
+    height: 60vh;
     border-radius: 2vh;
 }
-=======
-
-=======
->>>>>>> 3d09f7a (actualizaciòn de home y detail)
-#img{
-    width: 100%;
-    border-radius: 2vh;
-}
-<<<<<<< HEAD
-
-<<<<<<< HEAD
->>>>>>> 5aa7f81 (se edita el detail)
-=======
-
->>>>>>> 8aeb73c (avanzando en detail)
-=======
->>>>>>> 3d09f7a (actualizaciòn de home y detail)
 #like{
     right: 0;
     margin-top: 1vh;
@@ -145,44 +59,23 @@
     position: absolute;
 }
 #back{
-<<<<<<< HEAD
-<<<<<<< HEAD
     transition: 0.2s;
-=======
->>>>>>> 5aa7f81 (se edita el detail)
-=======
-    transition: 0.2s;
->>>>>>> 8aeb73c (avanzando en detail)
     position: absolute;
 }
 #back:hover{
     transition: 0.2s;
     filter: invert(100%);
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 .infocontainer{
     width: 86%;
     height: 100%;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> f0cdcd5 (cambio en detail)
-=======
->>>>>>> 2d7b94d (se ajustò el diseño)
 .gridTitle{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> f0cdcd5 (cambio en detail)
-=======
->>>>>>> 2d7b94d (se ajustò el diseño)
 .gridTitleItem{
     border: none;
 }
@@ -190,13 +83,7 @@
     display: flex;
     align-items: center;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> f0cdcd5 (cambio en detail)
-=======
->>>>>>> 2d7b94d (se ajustò el diseño)
 .countContainer{
     width: 100%;
     display: flex;
@@ -205,34 +92,19 @@
     justify-content: right;
     gap: 2vw;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> f0cdcd5 (cambio en detail)
-=======
->>>>>>> 2d7b94d (se ajustò el diseño)
 .countItem{
     width: 10vw;
 }
 .countItem:hover{
     filter: invert(100%);
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> f0cdcd5 (cambio en detail)
-=======
->>>>>>> 2d7b94d (se ajustò el diseño)
 #countNumber{
     font-family: "ESbold", sans-serif;
     font-size: 6vw;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 2d7b94d (se ajustò el diseño)
+
 #productoTitle{
     font-size: 6.4vw;
     font-family: "ESsemiBold", sans-serif;
@@ -328,7 +200,7 @@
     font-size: 3vw;
     text-decoration: line-through;
 }
-<<<<<<< HEAD
+
 @media (min-width: 600px) {
     #productoTitle{
         font-size: 4vw;
@@ -336,164 +208,4 @@
     #stars{
         width: 16vw;
     }
-    #descript{
-        font-size: 1.9vw;
-    }
-    #rerviewsText{
-        font-size: 2vw;
-    }
-    .flexC{
-        height: 80vh;
-    }
-    #cartText{
-        font-size: 2vw;
-    }
-    #tachado{
-        font-size: 1.2vw;
-    }
-=======
-
-=======
->>>>>>> 3d09f7a (actualizaciòn de home y detail)
-.infocontainer{
-    width: 86%;
-    height: 100%;
-<<<<<<< HEAD
-    border: 1px solid green;
-<<<<<<< HEAD
->>>>>>> 5aa7f81 (se edita el detail)
-=======
-=======
->>>>>>> 3d09f7a (actualizaciòn de home y detail)
-}
-=======
-
->>>>>>> f0cdcd5 (cambio en detail)
-#productoTitle{
-    font-size: 6.4vw;
-    font-family: "ESsemiBold", sans-serif;
-    color: #1B2028;
-    margin-bottom: 2vw;
-}
-#descript{
-    font-size: 3vw;
-    font-family: "ESmixed", sans-serif;
-    color: #878787;
-}
-#readMore{
-    font-family: "ESsemiBold", sans-serif;
-    color: #1B2028;
-}
-#stars{
-    width: 26vw;
-}
-#rerviewsText{
-    font-size: 3.6vw;
-    color: #878787;
-    font-family: "ESregular", sans-serif;
-}
-#blue{
-    color: #347EFB;
-}
-.reviews{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 2vw;
-    margin-bottom: 1vh;
-}
-#line{
-    margin: 0;
-    width: 100%;
-}
-.optionscontainer{
-    margin-top: 1.4vh;
-    width: 100%;
-    display: grid;
-    gap: 34%;
-    grid-template-columns: 40% 26%;
-}
-.optionscontainer div{
-    border: none;
-}
-.sizes{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-}
-#chooseSize{
-    margin-bottom: 1vh;
-    font-size: 3.3vw;
-    font-family: "ESbold", sans-serif;
-}
-.colorsOptions{
-    width: 6vw;
-}
-.sizesOptions{
-    width: 6vw;
-}
-.navigationBar{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    margin: 3vw;
-    margin-top: 0;
-    width: calc(100% - (6vw));
-    height: 10vh;
-    z-index: +1;
-    bottom: 0;
-    transition: 0.2s;
-    background-color: #292526;
-    border-radius: 12vw;
-}
-.navigationBar:hover{
-    transition: 02.s;
-    background-color: #3a6033;
-}
-#cartText{
-    margin-left: 2vw;
-    font-size: 4.6vw;
-    font-family: "ESmixed", sans-serif;
-    color: #ffffff;
-}
-#tachado{
-    font-family: "ESregular", sans-serif;
-    font-size: 3vw;
-    text-decoration: line-through;
-<<<<<<< HEAD
->>>>>>> 8aeb73c (avanzando en detail)
-=======
-}
-
-=======
->>>>>>> 2d7b94d (se ajustò el diseño)
-@media (min-width: 600px) {
-    #productoTitle{
-        font-size: 4vw;
-    }
-    #stars{
-        width: 16vw;
-    }
-<<<<<<< HEAD
->>>>>>> f0cdcd5 (cambio en detail)
-=======
-    #descript{
-        font-size: 1.9vw;
-    }
-    #rerviewsText{
-        font-size: 2vw;
-    }
-    .flexC{
-        height: 80vh;
-    }
-    #cartText{
-        font-size: 2vw;
-    }
-    #tachado{
-        font-size: 1.2vw;
-    }
->>>>>>> 2d7b94d (se ajustò el diseño)
 }

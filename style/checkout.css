@@ -1,27 +1,7 @@
 @import url(variables.css);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 @font-face {
     font-family: "ESsemiBold";
     src: url(../storage/fonts/encodeSans/EncodeSans-SemiBold.ttf);
-=======
-
-=======
->>>>>>> 8c9c6f9 (avances en checkout)
-@font-face {
-    font-family: "ESsemiBold";
-    src: url(../storage/fonts/encodeSans/EncodeSans_SemiCondensed-SemiBold.ttf);
->>>>>>> 2e018ec (estructura para checkout)
-=======
-
-=======
->>>>>>> c7233b8 (se inicio shipping en checkout)
-@font-face {
-    font-family: "ESsemiBold";
-    src: url(../storage/fonts/encodeSans/EncodeSans-SemiBold.ttf);
->>>>>>> 4c6483a (casi acaba estructura y flex de checkaut)
 }
 @font-face {
     font-family: "ESregular";
@@ -39,13 +19,6 @@
     font-family: "ESmixed";
     src: url(../storage/fonts/encodeSans/EncodeSans_SemiCondensed-Medium.ttf);
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 2e018ec (estructura para checkout)
-=======
->>>>>>> 8c9c6f9 (avances en checkout)
 *{
     padding: 0;
     margin: 0;
@@ -54,18 +27,8 @@
 
 .gridContainer{
     display: grid;
-<<<<<<< HEAD:css/checkout.css
-<<<<<<< HEAD
-    border: 1px solid black;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    grid-template-rows: 10vh 50vh 40vh;
-=======
->>>>>>> 6996e53 (se actualizo el diseño9)
-=======
     border: 1px solid black;
     grid-template-rows: 10vh 50vh 40vh;
->>>>>>> 5bbd84a (se arreglo la finalizacion de la pagina eh inicio de otra):style/checkout.css
     grid-template-rows: 10vh 50vh 90vh;
 }
 
@@ -122,47 +85,13 @@
 }
 
 .line{
-<<<<<<< HEAD:css/checkout.css
-<<<<<<< HEAD
     margin-top: 2vh;
     margin-bottom: 2vh;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6996e53 (se actualizo el diseño9)
-=======
->>>>>>> 3710c94 (feat :tada: comienzo)
-    margin: 3vw;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-<<<<<<< HEAD
-=======
-    margin-top: 2vh;
-    margin-bottom: 2vh;
->>>>>>> 5bbd84a (se arreglo la finalizacion de la pagina eh inicio de otra):style/checkout.css
-#lineDetail{
-    width: calc(100% - (12vw));
-    height: 10px;
-}
-<<<<<<< HEAD:css/checkout.css
-<<<<<<< HEAD
-
-=======
-=======
->>>>>>> 3710c94 (feat :tada: comienzo)
 #lineDetail{
     width: calc(100% - (12vw));
     height: 10px;
 }
 
->>>>>>> 86ffd05 (finaliza checkout)
-=======
->>>>>>> 6996e53 (se actualizo el diseño9)
-=======
-
->>>>>>> 5bbd84a (se arreglo la finalizacion de la pagina eh inicio de otra):style/checkout.css
 #productTitle{
     color: #1B2028;
     font-size: 3.8vw;
@@ -233,7 +162,6 @@
 
 .payMetod{
     position: relative;
-<<<<<<< HEAD
     border-radius: 3vw;
     display: flex;
     align-items: center;
@@ -323,328 +251,8 @@
     border-radius: 12vw;
 }
 
-#barButton{
+.barButton{
     font-family: "ESbold", sans-serif;
     font-size: 4vw;
     color: #ffffff;
-<<<<<<< HEAD:css/checkout.css
-<<<<<<< HEAD
-=======
-    grid-template-rows: 10vh 40vh 50vh;
-=======
->>>>>>> 4c6483a (casi acaba estructura y flex de checkaut)
-    grid-template-rows: 10vh 50vh 40vh;
 }
-.division{
-    display: flex;
-    align-items: center;
-    border: 1px solid red;
-<<<<<<< HEAD
->>>>>>> 2e018ec (estructura para checkout)
-=======
-}
-.division2{
-    border: 1px solid red;
-}
-.menu{
-    margin: 6vw;
-    width: 100%;
-    border: 1px solid blue;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.boton{
-    transition: 0.2s;
-    border-radius: 50%;
-    background-color: #ffffff;
-    height: 8vh;
-}
-.boton:hover{
-    transition: 0.2s;
-    filter: invert(100%);
-}
-#checkout{
-    color: #1B2028;
-    font-size: 4vh;
-    font-family: "ESsemiBold", sans-serif;
-}
-.flexgalery{
-    overflow: hidden;
-    overflow-y: auto;
-    margin: 6vw;
-    padding-top: 6vw;
-    padding-bottom: 6vw;
-    width: 100%;
-    height: 100%;
-    border: 1px solid green;
-    display: flex;
-    flex-direction: column;
-}
-.product{
-    display: grid;
-    grid-template-columns: 20% 50% 30%;
-}
-.img{
-    width: 100%;
-}
-.line{
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-<<<<<<< HEAD
->>>>>>> 8c9c6f9 (avances en checkout)
-=======
-}
-#productTitle{
-    color: #1B2028;
-    font-size: 3.8vw;
-    font-family: "ESsemiBold", sans-serif;
-}
-#productDescript{
-    margin-top: 1vh;
-    font-size: 2.8vw;
-    font-family: "ESregular", sans-serif;
-    color: #A4AAAD;
-}
-#productPrice{
-    margin-top: 2vw;
-    color: #1B2028;
-    font-size: 3.8vw;
-    font-family: "ESsemiBold", sans-serif;
-}
-.image{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.header{
-    margin-left: 4vw;
-}
-.prodcutCount{
-    position: relative;
-    display: flex;
-    justify-content: right;
-    align-items: end;
-}
-.fondo{
-    padding: 2vw;
-    padding-top: 3vw;
-    padding-bottom: 3vw;
-    border-radius: 2vw;
-    margin-right: 1vw;
-    margin-bottom: 1vw;
-    height: 6vw;
-    width: 20vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #1B2028;
-}
-.count{
-    width: 6vw;
-}
-.number{
-    font-size: 4vw;
-    font-family: "ESsemiBold", sans-serif;
-    color: #ffffff;
-}
-#points{
-    width: 4.4vw;
-    position: absolute;
-    margin-top: 1vw;
-    margin-right: 1vw;
-    top: 0;
-    right: 0;
-}
-#information{
-    margin-top: 6vw;
-    margin-left: 6vw;
-    font-size: 4vw;
-    font-family: "ESsemiBold", sans-serif;
-<<<<<<< HEAD
->>>>>>> 4c6483a (casi acaba estructura y flex de checkaut)
-=======
-}
-
-.payMetod{
-=======
->>>>>>> 86ffd05 (finaliza checkout)
-    border-radius: 3vw;
-    display: flex;
-    align-items: center;
-    background-color: #F6F6F6;
-    width: calc(100% - (12vw));
-    margin-top: 4vw;
-    margin-left: 6vw;
-    height: 9vh;
-}
-
-#visa{
-    transition: 0.2s;
-    border-radius: 1vh;
-    width: 8vh;
-    margin-left: 5vw;
-<<<<<<< HEAD
->>>>>>> c7233b8 (se inicio shipping en checkout)
-=======
-}
-#visa:hover{
-    transition: 0.2s;
-    box-shadow: 0px 0px 16px 0px rgb(80, 109, 255);
-}
-#visaNumber{
-    color: #1B2028;
-    margin-left: 4vw;
-    font-family: "ESmixed", sans-serif;
-    font-size: 3vw;
-}
-#arrow{
-    width: 4vw;
-    position: absolute;
-    right: 0;
-    margin-right: 4vw;
-}
-
-.payDetail{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 0 auto;
-    margin-top: 3vh;
-    width: calc(100% - (12vw));
-}
-
-.payLeft{
-    font-size: 2vh;
-    font-family: "ESregular", sans-serif;
-}
-.payRight{
-    display: flex;
-    justify-content: right;
-}
-.payRightContainer{
-    font-size: 2vh;
-    font-family: "ESsemiBold", sans-serif;
-    text-align: right;
-    display: inline-block;
-}
-
-#total{
-    margin-bottom: 1vh;
-}
-#totalN{
-    margin-bottom: 1vh;
-}#total2{
-    margin-top: 4vh;
-}
-#totalN2{
-    margin-top: 4vh;
-}
-#lineDetail{
-    margin-top: 1vh;
-    position: absolute;
-}
-
-.navigationBar{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    margin: 3vw;
-    margin-top: 0;
-    width: calc(100% - (6vw));
-    height: 10vh;
-    z-index: +1;
-    bottom: 0;
-    transition: 0.2s;
-    background-color: #292526;
-    border-radius: 12vw;
-}
-
-#barButton{
-    font-family: "ESbold", sans-serif;
-    font-size: 4vw;
-    color: #ffffff;
->>>>>>> 86ffd05 (finaliza checkout)
-}
-=======
-}
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    max-width: 600px;
-    margin: 50px auto;
-    text-align: center;
-}
-
-h1 {
-    margin-bottom: 30px;
-}
-
-.payment-options {
-    list-style-type: none;
-    padding: 0;
-}
-
-.payment-options li {
-    margin-bottom: 20px;
-}
-
-.payment-options input[type="radio"] {
-    display: none;
-}
-
-.payment-options label {
-    cursor: pointer;
-    padding: 10px 20px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-.payment-options label:hover {
-    background-color: #f0f0f0;
-}
-
-.payment-options input[type="radio"]:checked + label {
-    background-color: #007bff;
-    color: #fff;
-    border-color: #007bff;
-}
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    max-width: 600px;
-    margin: 50px auto;
-    text-align: center;
-}
-
-h1 {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-#payment-method {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-}
->>>>>>> 9d5ff02 (SE actualizo el diseño)
-=======
-}
->>>>>>> 5bbd84a (se arreglo la finalizacion de la pagina eh inicio de otra):style/checkout.css
