@@ -49,7 +49,7 @@
     display: flex;
 }
 #img{
-    height: 60vh;
+    width: 100%;
     border-radius: 2vh;
 }
 #like{
@@ -70,12 +70,10 @@
     width: 86%;
     height: 100%;
 }
-
 .gridTitle{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-
 .gridTitleItem{
     border: none;
 }
@@ -83,7 +81,6 @@
     display: flex;
     align-items: center;
 }
-
 .countContainer{
     width: 100%;
     display: flex;
@@ -92,19 +89,16 @@
     justify-content: right;
     gap: 2vw;
 }
-
 .countItem{
     width: 10vw;
 }
 .countItem:hover{
     filter: invert(100%);
 }
-
 #countNumber{
     font-family: "ESbold", sans-serif;
     font-size: 6vw;
 }
-
 #productoTitle{
     font-size: 6.4vw;
     font-family: "ESsemiBold", sans-serif;
@@ -200,12 +194,26 @@
     font-size: 3vw;
     text-decoration: line-through;
 }
-
 @media (min-width: 600px) {
     #productoTitle{
         font-size: 4vw;
     }
     #stars{
         width: 16vw;
+    }
+    #descript{
+        font-size: 1.9vw;
+    }
+    #rerviewsText{
+        font-size: 2vw;
+    }
+    .flexC{
+        height: 80vh;
+    }
+    #cartText{
+        font-size: 2vw;
+    }
+    #tachado{
+        font-size: 1.2vw;
     }
 }
