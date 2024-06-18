@@ -1,0 +1,100 @@
+@import url('variables.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "ESregular", sans-serif;
+    background-color: #f4f4f4;
+    color: #1B2028;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-header h1 {
+    font-family: "ESbold", sans-serif;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.profile-details {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.profile-details p {
+    margin-bottom: 10px;
+}
+
+.order-history,
+.account-settings {
+    margin-bottom: 20px;
+}
+
+.order-history h2,
+.account-settings h2 {
+    font-family: "ESsemiBold", sans-serif;
+    margin-bottom: 10px;
+}
+
+.order-history ul {
+    list-style: none;
+}
+
+.order-history li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.account-settings button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #1B2028;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.account-settings button:hover {
+    background-color: #292526;
+}

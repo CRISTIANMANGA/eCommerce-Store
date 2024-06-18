@@ -2,89 +2,88 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style/style.css">
- 
-    <script src="js/main.js"> </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+
     <link rel="icon" href="storage/media/icons/home.png" type="image/x-icon">
+
     <script src="js/main.js"></script>
 </head>
 <body>
+    
     <div class="gridcontainer">
         <div class="header1">
             <div class="cap1">
-                <p id="hello">Hello, Welcome 👋</p>
+                <p id="hello">Hello</p>
                 <p id="name">User</p>
             </div>
+
             <div class="cap2">
                 <div class="profilecuadro">
                     <img id="profile" src="storage/media/images/profile.svg">
                 </div>
             </div>
+
         </div>
-
-        <div class="searchBar">
-            <div class="cap3">
-                <div class="search">
-                    <input id="input_search" type="text" placeholder="Search clothes...">
-                    <span>
-                        <img id="lupa" src="storage/media/Iconly.svg">
-                    </span>
-
-                </div>
+        <nav class="nav">
+            <div class="nav__search">
+                <input id="input__search" type="text" data-opc="random" placeholder="Search clothes. . .">
+                <span class="search__icon">
+                    <img src="storage/media/magnifyingGlass.svg">
+                </span>
             </div>
-          
-
-            <div class="cap4">
-                <img id="filter" src="storage/media/Filter.svg">
+            <div class="nav__filter">
+                <a href="#">
+                    <img src="storage/media/filter.svg">
+                </a>
             </div>
+        </nav>
+
         </div>
         <div class="categorias">
+
             <div class="categoriascont">
-                <div class="elemento">
-                    <img class="categoriaIcon" src="storage/media/category.svg">
-                    <p class="categoriaText">All items</p>
+                <div class="elemento1">
+                    <img class="categoriaIcon" src="storage/media/list.png">
+                    <p class="categoriaText">Todo</p>
                 </div>
                 <div class="elemento">
-                    <img class="categoriaIcon" src="storage/media/dress.svg">
-                    <p class="categoriaText">Dress</p>
+                    <img class="categoriaIcon" src="storage/media/book.png">
+                    <p class="categoriaText">Libro</p>
                 </div>
                 <div class="elemento">
-                    <img class="categoriaIcon" src="storage/media/hat.svg">
-                    <p class="categoriaText">Hat</p>
+                    <img class="categoriaIcon" src="storage/media/clothes.png">
+                    <p class="categoriaText">Ropa</p>
                 </div>
                 <div class="elemento">
-                    <img class="categoriaIcon" src="storage/media/watch.svg">
-                    <p class="categoriaText">Watch</p>
+                    <img class="categoriaIcon" src="storage/media/electronic.png">
+                    <p class="categoriaText">Electronica</p>
                 </div>
                 <div class="elemento">
-                    <img class="categoriaIcon" src="storage/media/category.svg">
-                    <p class="categoriaText">All items</p>
+                    <img class="categoriaIcon" src="storage/media/sofa.png">
+                    <p class="categoriaText">Mueble</p>
                 </div>
                 <div class="elemento">
-                    <img class="categoriaIcon" src="storage/media/dress.svg">
-                    <p class="categoriaText">Dress</p>
+                    <img class="categoriaIcon" src="storage/media/toy.png">
+                    <p class="categoriaText">Juguete</p>
                 </div>
                 <div class="elemento">
-                    <img class="categoriaIcon" src="storage/media/hat.svg">
-                    <p class="categoriaText">Hat</p>
-                </div>
-                <div class="elemento">
-                    <img class="categoriaIcon" src="storage/media/watch.svg">
-                    <p class="categoriaText">Watch</p>
+                    <img class="categoriaIcon" src="storage/media/tools.png">
+                    <p class="categoriaText">Herramienta</p>
                 </div>
             </div>
+
         </div>
         <div class="productos">
             <div class="productosContainer">
                 <div class="column1">
                     <div class="productCont">
-                        <img id="likeEmpty" src="storage/media/likeEmpty.svg">
-                        <img class="productoImg" src="storage/media/images/p1.svg">
-                        <p class="productTitle">Modern light clothes</p>
-                        <p class="productoDescrip">Dress modern</p>
-                        <p class="productoPrice">$212.99</p>
+                        <img id="likeEmpty" src="storage/media/like.svg">
+                        <img class="productoImg" src="storage/media/elprincipito.jpg">
+                        <p class="productTitle">Libro: El principito</p>
+                        <p class="productoDescrip">Libros</p>
+                        <p class="productoPrice">$24.000</p>
                         <div class="productoRating">
                             <img class="ratingImg" src="storage/media/star.svg">
                             <p class="rating">5.0</p>
@@ -92,10 +91,10 @@
                     </div>
                     <div class="productCont">
                         <img id="likeEmpty" src="storage/media/likeEmpty.svg">
-                        <img class="productoImgType2" src="storage/media/images/p3.svg">
-                        <p class="productTitle">Modern light clothes</p>
-                        <p class="productoDescrip">Dress modern</p>
-                        <p class="productoPrice">$212.99</p>
+                        <img class="productoImg" src="storage/media/camisanegra.png">
+                        <p class="productTitle">Camisa Negra</p>
+                        <p class="productoDescrip">Ropa</p>
+                        <p class="productoPrice">$30.000</p>
                         <div class="productoRating">
                             <img class="ratingImg" src="storage/media/star.svg">
                             <p class="rating">5.0</p>
@@ -104,11 +103,11 @@
                 </div>
                 <div class="column1">
                     <div id="b" class="productCont">
-                        <img id="likeEmpty" src="storage/media/like.svg">
-                        <img onclick="window.location.href = 'views/detail.html'" class="productoImg" src="storage/media/images/p2.svg">
-                        <p class="productTitle">Modern light clothes</p>
-                        <p class="productoDescrip">Dress modern</p>
-                        <p class="productoPrice">$212.99</p>
+                        <img id="likeEmpty" src="storage/media/likeEmpty.svg">
+                        <img class="productoImg" src="storage/media/smarthphonexyz.jpg">
+                        <p class="productTitle">Smartphone XYZ</p>
+                        <p class="productoDescrip">Electronica </p>
+                        <p class="productoPrice">$1.223.400</p>
                         <div class="productoRating">
                             <img class="ratingImg" src="storage/media/star.svg">
                             <p class="rating">5.0</p>
@@ -116,10 +115,10 @@
                     </div>
                     <div class="productCont">
                         <img id="likeEmpty" src="storage/media/likeEmpty.svg">
-                        <img class="productoImg" src="storage/media/images/p4.svg">
-                        <p class="productTitle">Modern light clothes</p>
-                        <p class="productoDescrip">Dress modern</p>
-                        <p class="productoPrice">$212.99</p>
+                        <img class="productoImg" src="storage/media/sofa moderno.jpg">
+                        <p class="productTitle">Sofá Moderno</p>
+                        <p class="productoDescrip">Muebles</p>
+                        <p class="productoPrice">$1.585.600</p>
                         <div class="productoRating">
                             <img class="ratingImg" src="storage/media/star.svg">
                             <p class="rating">5.0</p>
@@ -129,10 +128,10 @@
                 <div class="column1">
                     <div class="productCont">
                         <img id="likeEmpty" src="storage/media/likeEmpty.svg">
-                        <img class="productoImg" src="storage/media/images/p1.svg">
-                        <p class="productTitle">Modern light clothes</p>
-                        <p class="productoDescrip">Dress modern</p>
-                        <p class="productoPrice">$212.99</p>
+                        <img class="productoImg" src="storage/media/libro1984.jpg">
+                        <p class="productTitle">Libro : 1984</p>
+                        <p class="productoDescrip">Libros</p>
+                        <p class="productoPrice">$26.200</p>
                         <div class="productoRating">
                             <img class="ratingImg" src="storage/media/star.svg">
                             <p class="rating">5.0</p>
@@ -140,58 +139,10 @@
                     </div>
                     <div class="productCont">
                         <img id="likeEmpty" src="storage/media/likeEmpty.svg">
-                        <img class="productoImgType2" src="storage/media/images/p3.svg">
-                        <p class="productTitle">Modern light clothes</p>
-                        <p class="productoDescrip">Dress modern</p>
-                        <p class="productoPrice">$212.99</p>
-                        <div class="productoRating">
-                            <img class="ratingImg" src="storage/media/star.svg">
-                            <p class="rating">5.0</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="column1">
-                    <div id="b" class="productCont">
-                        <img id="likeEmpty" src="storage/media/like.svg">
-                        <img onclick="window.location.href = 'views/detail.html'" class="productoImg" src="storage/media/images/p2.svg">
-                        <p class="productTitle">Modern light clothes</p>
-                        <p class="productoDescrip">Dress modern</p>
-                        <p class="productoPrice">$212.99</p>
-                        <div class="productoRating">
-                            <img class="ratingImg" src="storage/media/star.svg">
-                            <p class="rating">5.0</p>
-                        </div>
-                    </div>
-                    <div class="productCont">
-                        <img id="likeEmpty" src="storage/media/likeEmpty.svg">
-                        <img class="productoImg" src="storage/media/images/p4.svg">
-                        <p class="productTitle">Modern light clothes</p>
-                        <p class="productoDescrip">Dress modern</p>
-                        <p class="productoPrice">$212.99</p>
-                        <div class="productoRating">
-                            <img class="ratingImg" src="storage/media/star.svg">
-                            <p class="rating">5.0</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="column1">
-                    <div class="productCont">
-                        <img id="likeEmpty" src="storage/media/likeEmpty.svg">
-                        <img class="productoImg" src="storage/media/images/p1.svg">
-                        <p class="productTitle">Modern light clothes</p>
-                        <p class="productoDescrip">Dress modern</p>
-                        <p class="productoPrice">$212.99</p>
-                        <div class="productoRating">
-                            <img class="ratingImg" src="storage/media/star.svg">
-                            <p class="rating">5.0</p>
-                        </div>
-                    </div>
-                    <div class="productCont">
-                        <img id="likeEmpty" src="storage/media/likeEmpty.svg">
-                        <img class="productoImgType2" src="storage/media/images/p3.svg">
-                        <p class="productTitle">Modern light clothes</p>
-                        <p class="productoDescrip">Dress modern</p>
-                        <p class="productoPrice">$212.99</p>
+                        <img class="productoImg" src="storage/media/pantalonvaquero.jpg">
+                        <p class="productTitle">Pantalones Vaqueros</p>
+                        <p class="productoDescrip">Ropa</p>
+                        <p class="productoPrice">$70.000</p>
                         <div class="productoRating">
                             <img class="ratingImg" src="storage/media/star.svg">
                             <p class="rating">5.0</p>
@@ -200,11 +151,35 @@
                 </div>
                 <div class="column1">
                     <div id="b" class="productCont">
-                        <img id="likeEmpty" src="storage/media/like.svg">
-                        <img onclick="window.location.href = 'views/detail.html'" class="productoImg" src="storage/media/images/p2.svg">
-                        <p class="productTitle">Modern light clothes</p>
-                        <p class="productoDescrip">Dress modern</p>
-                        <p class="productoPrice">$212.99</p>
+                       <img id="likeEmpty" src="storage/media/likeEmpty.svg">
+                        <img class="productoImg" src="storage/media/tabletABC.jpg">
+                        <p class="productTitle">Tablet ABC</p>
+                        <p class="productoDescrip">Electrónica</p>
+                        <p class="productoPrice">$890.600</p>
+                        <div class="productoRating">
+                            <img class="ratingImg" src="storage/media/star.svg">
+                            <p class="rating">5.0</p>
+                        </div>
+                    </div>
+                    <div class="productCont">
+                         
+                        <img class="productoImg" src="storage/media/mesadecentro.jpg">
+                        <p class="productTitle">Mesa de Centro </p>
+                        <p class="productoDescrip">Muebles</p>
+                        <p class="productoPrice">$612.400</p>
+                        <div class="productoRating">
+                            <img class="ratingImg" src="storage/media/star.svg">
+                            <p class="rating">5.0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column1">
+                    <div class="productCont">
+                        <img id="likeEmpty" src="storage/media/likeEmpty.svg">
+                        <img class="productoImg" src="storage/media/legostarwars.jpg">
+                        <p class="productTitle">Lego Star Wars</p>
+                        <p class="productoDescrip">Juguetes</p>
+                        <p class="productoPrice">$160.800</p>
                         <div class="productoRating">
                             <img class="ratingImg" src="storage/media/star.svg">
                             <p class="rating">5.0</p>
@@ -212,26 +187,52 @@
                     </div>
                     <div class="productCont">
                         <img id="likeEmpty" src="storage/media/likeEmpty.svg">
-                        <img class="productoImg" src="storage/media/images/p4.svg">
-                        <p class="productTitle">Modern light clothes</p>
-                        <p class="productoDescrip">Dress modern</p>
-                        <p class="productoPrice">$212.99</p>
+                        <img class="productoImg" src="storage/media/taladroinalambrico.jpg">
+                        <p class="productTitle">Taladro inalámbrico</p>
+                        <p class="productoDescrip">Herramientas</p>
+                        <p class="productoPrice">$376.000</p>
                         <div class="productoRating">
                             <img class="ratingImg" src="storage/media/star.svg">
                             <p class="rating">5.0</p>
                         </div>
+                    </div>
+                </div>
+                <div class="column1">
+                    <div id="b" class="productCont">
+                        <img id="likeEmpty" src="storage/media/likeEmpty.svg">
+                        <img class="productoImg" src="storage/media/barbie.jpg">
+                        <p class="productTitle">Muñeca Barbie</p>
+                        <p class="productoDescrip">Jugeuetes</p>
+                        <p class="productoPrice">$230.000</p>
+                        <div class="productoRating">
+                            <img class="ratingImg" src="storage/media/star.svg">
+                            <p class="rating">5.0</p>
+                        </div>
+                    </div>
+                    <div class="productCont">
+                        <img id="likeEmpty" src="storage/media/likeEmpty.svg">
+                        <img class="productoImg" src="storage/media/cajadeherramientas.jpg">
+                        <p class="productTitle">Caja de Herramientas</p>
+                        <p class="productoDescrip">Herramientas</p>
+                        <p class="productoPrice">$160.000</p>
+                        <div class="productoRating">
+                            <img class="ratingImg" src="storage/media/star.svg">
+                            <p class="rating">5.0</p>
+                        </div>
+                    </div>
+                </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="navigationBar">
         <div class="navigationitem">
             <div class="NitemF">
                 <img class="navigationImg" src="storage/media/navigation/home.svg">
             </div>
         </div>
-        <div class="navigationitem">
         <div  onclick="window.location.href = 'views/checkout.html'" class="navigationitem">
             <div class="NitemF">
                 <img class="navigationImg" src="storage/media/navigation/cart.svg">
