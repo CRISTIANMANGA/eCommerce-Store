@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../style/detail.css">
-    <link rel="stylesheet" href="../js/main.js">
+    <link rel="stylesheet" href="../js/module/detail.js">
+    <script src="../js/main.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Details</title>
@@ -62,7 +63,7 @@
         </div>
 
     </div>
-        <div onclick="window.location.href = 'checkout.html'" class="navigationBar">
+        <div onclick="addToCart()" class="navigationBar">
             <img src="../storage/media/shopping-cart.svg">
             <p id="cartText">Add to Cart | $<span id="price">100.99</span> <span id="tachado">$190.99</span></p>
         </div>
@@ -90,6 +91,18 @@
                 countElement.textContent = count - 1;
                 updatePrice(count - 1);
             }
+        }
+
+        function addToCart() {
+            let count = parseInt(document.getElementById('countNumber').textContent);
+            let price = parseFloat(document.getElementById('price').textContent);
+            let product = {
+                title: "El principito",
+                count: count,
+                price: price
+            };
+            localStorage.setItem('cart', JSON.stringify(product));
+            window.location.href = 'checkout.html';
         }
     </script>
 </body>

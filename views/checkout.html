@@ -18,111 +18,8 @@
         </div>
         <div class="division">
             <div class="flexgalery">
-                <div class="product">
-                    <div class="producto">
-                        <img class="img" src="../storage/media/elprincipito.jpg">
-                    </div>
-                    <div class="header">
-                        <p id="productTitle">El principito</p>
-                        <p id="productDescript"> modern</p>
-                        <p id="productPrice">$24.000</p>
-                    </div>
-                    <div class="prodcutCount">
-                        <img id="points" src="../storage/media/menu3points.svg">
-                        <div class="fondo">
-                            <img class="count" src="../storage/media/minusWhite.svg">
-                            <p class="number">4</p>
-                            <img class="count" src="../storage/media/plusWhite.svg">
-                        </div>
-                    </div>
-                </div>
+                <div id="productContainer"></div>
                 <img class="line" src="../storage/media/line2.svg">
-                <div class="product">
-                    <img class="img" src="../storage/media/camisanegra.png">
-                    <div class="header">
-                        <p id="productTitle">Camisa negra</p>
-                        <p id="productDescript">Dress modern</p>
-                        <p id="productPrice">$30.000</p>
-                    </div>
-                    <div class="prodcutCount">
-                        <img id="points" src="../storage/media/menu3points.svg">
-                        <div class="fondo">
-                            <img class="count" src="../storage/media/minusWhite.svg">
-                            <p class="number">1</p>
-                            <img class="count" src="../storage/media/plusWhite.svg">
-                        </div>
-                    </div>
-                </div>
-                <img class="line" src="../storage/media/line2.svg">
-                <div class="product">
-                    <img class="img" src="../storage/media/smarthphonexyz.jpg">
-                    <div class="header">
-                        <p id="productTitle">Smarthpone</p>
-                        <p id="productDescript"> modern</p>
-                        <p id="productPrice">$1.223.400</p>
-                    </div>
-                    <div class="prodcutCount">
-                        <img id="points" src="../storage/media/menu3points.svg">
-                        <div class="fondo">
-                            <img class="count" src="../storage/media/minusWhite.svg">
-                            <p class="number">4</p>
-                            <img class="count" src="../storage/media/plusWhite.svg">
-                        </div>
-                    </div>
-                </div>
-                <img class="line" src="../storage/media/line2.svg">
-                <div class="product">
-                    <div class="producto">
-                        <img class="img" src="../storage/media/book.png">
-                    </div>
-                    <div class="header">
-                        <p id="productTitle">Libro : 1984</p>
-                        <p id="productDescript"> modern</p>
-                        <p id="productPrice">$26.200</p>
-                    </div>
-                    <div class="prodcutCount">
-                        <img id="points" src="../storage/media/menu3points.svg">
-                        <div class="fondo">
-                            <img class="count" src="../storage/media/minusWhite.svg">
-                            <p class="number">4</p>
-                            <img class="count" src="../storage/media/plusWhite.svg">
-                        </div>
-                    </div>
-                </div>
-                <img class="line" src="../storage/media/line2.svg">
-                <div class="product">
-                    <img class="img" src="../storage/media/tabletABC.jpg">
-                    <div class="header">
-                        <p id="productTitle">Tablet ABC</p>
-                        <p id="productDescript"> modern</p>
-                        <p id="productPrice">$890.600</p>
-                    </div>
-                    <div class="prodcutCount">
-                        <img id="points" src="../storage/media/menu3points.svg">
-                        <div class="fondo">
-                            <img class="count" src="../storage/media/minusWhite.svg">
-                            <p class="number">1</p>
-                            <img class="count" src="../storage/media/plusWhite.svg">
-                        </div>
-                    </div>
-                </div>
-                <img class="line" src="../storage/media/line2.svg">
-                <div class="product">
-                    <img class="img" src="../storage/media/pantalonvaquero.jpg">
-                    <div class="header">
-                        <p id="productTitle">Pantalones Vaqueros</p>
-                        <p id="productDescript">Dress modern</p>
-                        <p id="productPrice">$70.000</p>
-                    </div>
-                    <div class="prodcutCount">
-                        <img id="points" src="../storage/media/menu3points.svg">
-                        <div class="fondo">
-                            <img class="count" src="../storage/media/minusWhite.svg">
-                            <p class="number">4</p>
-                            <img class="count" src="../storage/media/plusWhite.svg">
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
         <div class="division2">
@@ -134,16 +31,16 @@
             </div>
             <div class="payDetail">
                 <div class="payLeft">
-                    <p id="total">Total (9 items)</p>
+                    <p id="total">Total (<span id="totalItems">0</span> items)</p>
                     <p id="total">Shipping Fee</p>
                     <img id="lineDetail" src="../storage/media/line2.svg">
                     <p id="total2">Sub Total</p>
                 </div>
                 <div class="payRight">
                     <div class="payRightContainer">
-                        <p id="totalN">$131.97</p>
+                        <p id="totalN">$<span id="totalPrice">0.00</span></p>
                         <p id="totalN">$0.00</p>
-                        <p id="totalN2">$131.97</p>
+                        <p id="totalN2">$<span id="subTotal">0.00</span></p>
                     </div>
                 </div>
             </div>
@@ -152,21 +49,77 @@
     <div class="navigationBar">
         <p id="barButton">Pay</p>
     </div>
+    
     <script>
-        function incrementCount() {
-            let countElement = document.getElementById('countNumber');
-            let count = parseInt(countElement.textContent);
-            countElement.textContent = count + 1;
+        document.addEventListener("DOMContentLoaded", function() {
+            let product = JSON.parse(localStorage.getItem('cart'));
+            if (product) {
+                displayProduct(product);
+                updateTotal(product.count, product.price);
+            }
+        });
+
+        function displayProduct(product) {
+            let productContainer = document.getElementById('productContainer');
+            productContainer.innerHTML = `
+                <div class="product">
+                    <div class="producto">
+                        <img class="img" src="../storage/media/elprincipito.jpg">
+                    </div>
+                    <div class="header">
+                        <p id="productTitle">${product.title}</p>
+                        <p id="productDescript">modern</p>
+                        <p id="productPrice">$<span id="itemPrice">${product.price}</span></p>
+                    </div>
+                    <div class="prodcutCount">
+                        <img id="points" src="../storage/media/menu3points.svg">
+                        <div class="fondo">
+                            <img class="count" src="../storage/media/minusWhite.svg" onclick="decrementCheckoutCount()">
+                            <p class="number" id="checkoutCount">${product.count}</p>
+                            <img class="count" src="../storage/media/plusWhite.svg" onclick="incrementCheckoutCount()">
+                        </div>
+                    </div>
+                </div>`;
         }
 
+        function updatePrice(count) {
+            let priceElement = document.getElementById('price');
+            priceElement.textContent = (initialPrice * count).toFixed(2);
+        }
+
+        function updateTotal(count, price) {
+            document.getElementById('totalItems').textContent = count;
+            document.getElementById('totalPrice').textContent = (price * count).toFixed(2);
+            document.getElementById('subTotal').textContent = (price * count).toFixed(2);
+        }
+
+        function incrementCheckoutCount() {
+            let countElement = document.getElementById('checkoutCount');
+            let count = parseInt(countElement.textContent);
+            let price = parseFloat(document.getElementById('itemPrice').textContent);
+            countElement.textContent = count + 1;
+            updateTotal(count + 1, price);
+        }
         function decrementCount() {
             let countElement = document.getElementById('countNumber');
             let count = parseInt(countElement.textContent);
             if (count > 1) {
                 countElement.textContent = count - 1;
+                updatePrice(count - 1);
             }
         }
-    </script>
 
+        function addToCart() {
+            let count = parseInt(document.getElementById('countNumber').textContent);
+            let price = parseFloat(document.getElementById('price').textContent);
+            let product = {
+                title: "El principito",
+                count: count,
+                price: price
+            };
+            localStorage.setItem('cart', JSON.stringify(product));
+            window.location.href = 'checkout.html';
+        }
+    </script>
 </body>
 </html>
