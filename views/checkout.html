@@ -152,6 +152,21 @@
     <div class="navigationBar">
         <p id="barButton">Pay</p>
     </div>
+    <script>
+        function incrementCount() {
+            let countElement = document.getElementById('countNumber');
+            let count = parseInt(countElement.textContent);
+            countElement.textContent = count + 1;
+        }
+
+        function decrementCount() {
+            let countElement = document.getElementById('countNumber');
+            let count = parseInt(countElement.textContent);
+            if (count > 1) {
+                countElement.textContent = count - 1;
+            }
+        }
+    </script>
 
 </body>
 </html>
